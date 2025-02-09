@@ -1,9 +1,9 @@
 import {  useState } from "react"
-import { Counter } from "./component/Counter"
-import { Header } from "./component/Header"
-import { Section } from "./component/Section"
+import { Counter } from "./components/Counter"
+import { Header } from "./components/Header"
+import { Section } from "./components/Section"
 import { Operation } from "./Enums"
-import { List } from "./component/List"
+import { List } from "./components/List"
 
 function App() {
   // const renderIt = <T,>(items: T[],): ReactNode => {
