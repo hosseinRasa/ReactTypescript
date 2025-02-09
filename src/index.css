@@ -1,0 +1,21 @@
+body{
+  padding: 1rem;
+}
+
+
+button{
+
+  font-size: xx-large;
+  width: 2rem;
+  border: 1px solid green;
+  color: green;
+  background-color: transparent;
+  cursor: pointer;
+}
+button:hover{
+  box-shadow: 5px 2px 3px green;
+
+}
+
+
+
