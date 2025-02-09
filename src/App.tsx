@@ -1,10 +1,16 @@
-import { useState } from "react"
+import {  useState } from "react"
 import { Counter } from "./component/Counter"
 import { Header } from "./component/Header"
 import { Section } from "./component/Section"
 import { Operation } from "./Enums"
+import { List } from "./component/List"
 
 function App() {
+  // const renderIt = <T,>(items: T[],): ReactNode => {
+  //   return items.map(
+  //     (item, index) => <li key={index}><> {item}</></li>
+  //   )
+  // }
   const[count, setCount] = useState<number>(1)
   const calcCount = (count: number, opType: Operation): void  => {
     if((opType === Operation.minus &&--count < 1) || (opType === Operation.add &&++count > 10) ) {alert('Limit');
@@ -34,6 +40,8 @@ function App() {
     <Counter count={count} setCount={(value: number, optype: Operation) => calcCount(value, optype)}>
       <p>count is {count}</p>
       </Counter>
+
+      <List items={[<a href="https://www.google.com" target="_blank">google</a>, <a href="https://www.tabnak.ir" target="_blank">shanabattery</a>, ]} />
     </>
   )
 }
